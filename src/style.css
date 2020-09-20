@@ -1,0 +1,406 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+} /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* css reset ends */
+
+body{
+    background:#f3f3f3;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header {
+  padding: 1rem 8rem;
+  background: white;
+}
+/* .head-container {
+  max-width: 1200px;
+} */
+ .logo {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  color: whitesmoke;
+  background: orangered;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-left {
+  width: 65%;
+}
+
+.nav-right {
+  width: 25%;
+}
+
+.nav-left ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav-left ul li {
+  color: grey;
+  font-size: 1.2rem;
+}
+.nav-left ul li:hover {
+  color: black;
+  /* font-size: 0.7rem; */
+}
+
+.search-bar {
+  width: 15rem;
+  /* font-size: 0.5rem; */
+  padding: 5px;
+}
+.nav-right ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav-right ul li {
+  color: grey;
+  margin:0.5rem;
+  font-size: 1.2rem;
+}
+.nav-right ul li:hover {
+  color: black;
+  /* margin:0.6rem; */
+  /* font-size: 0.7rem; */
+}
+
+
+/* whats new section */
+
+
+.productName{
+    font-size:0.8rem;
+    font-weight:600;
+    margin:0.5rem;
+}
+
+.description{
+    font-size:0.6rem;
+}
+
+.comments-tags{
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.comments{
+    margin-right:1rem;
+}
+
+.main-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.main-container .container{
+  align-items: flex-start;
+}
+
+.left-side {
+  width: 50%;
+  border: 1px solid grey;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.right-side {
+  width: 50%;
+  border: 1px solid grey;
+}
+
+.whats-new {
+  border: 1px solid red;
+}
+
+.added-products{
+  width:723px;
+  
+  /* border-bottom:1px solid lightgrey; */
+}
+
+.upcoming-products{
+  width:333px;
+}
+.container{
+  justify-content: space-evenly;
+}
+
+.upvotes{
+  border:1px solid lightgrey;
+}
+
+article{
+  border-bottom:1px solid lightgrey;
+}
+
+.comment-box{
+  border:1px solid lightgrey;
+  border-radius:3px;
+}
