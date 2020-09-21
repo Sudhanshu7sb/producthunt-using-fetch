@@ -1,10 +1,9 @@
 import React from "react";
 import "../style.css";
-import Addproduct from "./SingleProductDetails";
+import SingleProductDetails from "./SingleProductDetails";
 import Upcomingproducts from "./Upcomingproducts";
 import Hiringnow from "./Hiringnow";
 import Topdiscussion from "./Topdiscussion";
-// import products from "../data"
 
 class Newproducts extends React.Component {
   constructor() {
@@ -39,9 +38,16 @@ class Newproducts extends React.Component {
         <div className="container flex pt-6">
           <section className="added-products">
             <ul>
+              <h2 className="is-size-4 py-3">Today</h2>
               {this.state.products.map((product, index) => (
-                <Addproduct key={index} prod={product} />
-              ))}
+                <SingleProductDetails key={index} prod={product} title="today"/>
+              )).slice(0,9)}
+            </ul>
+            <ul>
+              <h2 className="is-size-4 py-3">Yesterday</h2>
+              {this.state.products.map((product, index) => (
+                <SingleProductDetails key={index} prod={product} title="today"/>
+              )).slice(0,9)}
             </ul>
           </section>
           <section className="upcoming-products">
